@@ -1,3 +1,16 @@
+"""
+Gold Trading Pro - COMPLETE Google Material Design 3
+✅ All 10+ indicators with Google Material Design 3
+✅ AI decision making (Groq/Gemini)
+✅ Real-time gold prices
+✅ Database storage & history
+✅ Win/Loss tracking
+✅ Performance analytics
+✅ Multiple timeframes
+✅ Alert notifications
+✅ Export data
+"""
+
 from kivymd.app import MDApp
 from kivymd.uix.screen import MDScreen
 from kivymd.uix.card import MDCard
@@ -38,8 +51,8 @@ MD3_COLORS = {
 }
 
 # API Configuration
-GROQ_API_KEY = "your_groq_api_key_here"
-GEMINI_API_KEY = "your_gemini_api_key_here"
+GROQ_API_KEY = "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"
+GEMINI_API_KEY = "AIzaSyD-ZFqXcyrDnzsEtVRhLth4FT2peoBJMOc"
 USE_AI_DECISION = True
 
 class TradingDatabase:
