@@ -4,7 +4,7 @@ package.name = goldtradingpro
 package.domain = org.goldtrading
 source.dir = .
 source.include_exts = py
-version = 0.1
+version = 0.2
 requirements = python3,kivy==2.1.0
 orientation = portrait
 fullscreen = 0
