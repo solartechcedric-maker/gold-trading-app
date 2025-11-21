@@ -5,27 +5,27 @@ title = Gold Trading Pro
 package.name = goldtradingapp
 package.domain = org.goldtrading
 
-# Source code
+# Source code - NO DUPLICATES
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,db
 
-# Main entry point
-source.main = main.py
+# Main entry point - ONLY APPEARS ONCE
+source.main = main_complete.py
 
 # Version
 version = 1.0
 
-# Requirements - REMOVED pandas/numpy (don't work on Android)
+# Requirements - MOBILE-FRIENDLY ONLY (NO pandas, NO numpy)
 requirements = python3,kivy==2.3.0,kivymd==1.1.1,requests,pillow
 
 # Android permissions
-android.permissions = INTERNET,ACCESS_NETWORK_STATE,WAKE_LOCK
+android.permissions = INTERNET,ACCESS_NETWORK_STATE,WAKE_LOCK,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 
 # Orientation
 orientation = portrait
 
-# Architecture - SINGLE ARCH for faster build
-android.archs = armeabi-v7a
+# Supported architectures
+android.archs = arm64-v8a, armeabi-v7a
 
 # Android API level
 android.api = 31
@@ -34,7 +34,6 @@ android.ndk = 25b
 
 # Enable AndroidX support
 android.enable_androidx = True
-android.accept_sdk_license = True
 
 [buildozer]
 
@@ -42,7 +41,7 @@ android.accept_sdk_license = True
 log_level = 2
 
 # Build warnings
-warn_on_root = 0
+warn_on_root = 1
 
 # Build directory
 build_dir = ./.buildozer
